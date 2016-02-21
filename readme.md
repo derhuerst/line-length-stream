@@ -5,15 +5,11 @@
 ```javascript
 const lineLengthStream = require('line-length-stream')
 let s = lineLengthStream({tabSize: 4})
+
 s.on('data', console.log)
-
-s.write('foo')
-s.write('')
-s.write('	bar') // indented by 1 tab
-s.end('  quux')   // indented by 2 spaces
+s.end('\tfoo\n\n  bar baz')
+// `[4, 3]`, `[0, 0]` and `[2, 7]` will be logged.
 ```
-
-`[0, 3]`, `[0, 0]`, `[4, 3]` and `[0, 3]` will be logged.
 
 [![build status](https://img.shields.io/travis/derhuerst/line-length-stream.svg)](https://travis-ci.org/derhuerst/line-length-stream)
 [![dependency status](https://img.shields.io/david/derhuerst/line-length-stream.svg)](https://david-dm.org/derhuerst/line-length-stream#info=dependencies)
