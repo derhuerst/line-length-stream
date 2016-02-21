@@ -10,6 +10,11 @@
 	"repository":        "git://github.com/derhuerst/line-length-stream.git",
 	"license":           "ISC",
 	"engines":           {"node": ">=5"},
+	"dependencies": {
+		"byline":             "^4.2.1",
+		"through2-objectify": "^0.1.1",
+		"stream-connect":     "^1.0.2"
+	},
 	"devDependencies": {
 		"coffee-script":      "^1.10",
 		"nodeunit":           "^0.9.1",
