@@ -7,7 +7,11 @@ const lineLengthStream = require('line-length-stream')
 let s = lineLengthStream({tabSize: 4})
 
 s.on('data', console.log)
-s.end('\tfoo\n\n  bar baz')
+s.end([
+	'\tfoo',
+	'',
+	'  bar baz'
+].join('\n'))
 // `[4, 3]`, `[0, 0]` and `[2, 7]` will be logged.
 ```
 
