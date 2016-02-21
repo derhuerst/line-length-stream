@@ -31,7 +31,7 @@ npm install line-length-stream
 
 `lineLengthStream` takes accepts an optional `options` argument. It returns a [transform stream](https://nodejs.org/docs/latest/api/stream.html#stream_class_stream_transform). `options` can have the following properties.
 
-- `tabSize`: The number of chars that `'\n'` stands for.
+- `tabSize`: The number of chars that `'\t'` stands for.
 
 
 
