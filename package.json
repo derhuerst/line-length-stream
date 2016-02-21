@@ -1,0 +1,13 @@
+{
+	"name":              "line-length-stream",
+	"description":       "Transform stream that returns the length of each line.",
+	"version":           "0.1.0",
+	"main":              "index.js",
+	"files":             ["index.js"],
+	"keywords":          ["line", "length", "indent", "stream", "streams2", "through2"],
+	"author":            "Jannis R <mail@jannisr.de>",
+	"homepage":          "https://github.com/derhuerst/line-length-stream",
+	"repository":        "git://github.com/derhuerst/line-length-stream.git",
+	"license":           "ISC",
+	"engines":           {"node": ">=5"}
+}
