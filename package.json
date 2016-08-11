@@ -1,7 +1,7 @@
 {
 	"name":              "line-length-stream",
 	"description":       "Transform stream that returns the length of each line.",
-	"version":           "0.1.0",
+	"version":           "0.1.1",
 	"main":              "index.js",
 	"files":             ["index.js"],
 	"keywords":          ["line", "length", "indent", "stream", "streams2", "through2"],
@@ -11,7 +11,7 @@
 	"license":           "ISC",
 	"engines":           {"node": ">=5"},
 	"dependencies": {
-		"byline":             "^4.2.1",
+		"byline":             "^5",
 		"through2-objectify": "^0.1.1",
 		"stream-connect":     "^1.0.2"
 	},

@@ -18,6 +18,7 @@ s.end([
 [![build status](https://img.shields.io/travis/derhuerst/line-length-stream.svg)](https://travis-ci.org/derhuerst/line-length-stream)
 [![dependency status](https://img.shields.io/david/derhuerst/line-length-stream.svg)](https://david-dm.org/derhuerst/line-length-stream#info=dependencies)
 [![dev dependency status](https://img.shields.io/david/dev/derhuerst/line-length-stream.svg)](https://david-dm.org/derhuerst/line-length-stream#info=devDependencies)
+![ISC-licensed](https://img.shields.io/github/license/derhuerst/line-length-stream.svg)
 
 
 ## Installing
