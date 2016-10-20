@@ -16,16 +16,13 @@
 		"stream-connect":     "^1.0.2"
 	},
 	"devDependencies": {
-		"coffee-script":      "^1.11.1",
-		"nodeunit":           "^0.10.2",
-		"deep-strict-equal":  "^0.2",
-		"is-stream":          "^1.1",
-		"stream-sink":        "^2",
-		"watchy":             "^0.6.6"
+		"tape": "^4.6.2",
+		"tap-min": "^1.1",
+		"is-stream": "^1.1",
+		"stream-sink": "^2"
 	},
 	"scripts": {
-		"test":          "nodeunit --reporter minimal test.coffee",
-		"test:watch":    "watchy -s -w . nodeunit --reporter minimal test.coffee",
+		"test": "node test.js | tap-min",
 		"prepublish":    "npm test"
 	}
 }
