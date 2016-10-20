@@ -55,7 +55,7 @@ module.exports =
 			sink = sinkStream objectMode: true
 			lls.pipe sink
 
-			sink.on 'data', (d) ->
+			sink.then (d) ->
 				test.ok dpStrEql d, [[0, 3], [0, 0], [2, 7]]
 				test.done()
 			lls.end 'foo\n\n  bar baz'
@@ -65,7 +65,7 @@ module.exports =
 			sink = sinkStream objectMode: true
 			lls.pipe sink
 
-			sink.on 'data', (d) ->
+			sink.then (d) ->
 				test.ok dpStrEql d, [[0, 3], [2, 3], [4, 3], [6, 4]]
 				test.done()
 			lls.end 'foo\n  bar\n    baz\n  \tquux'
