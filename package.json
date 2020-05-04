@@ -18,7 +18,7 @@
 	"devDependencies": {
 		"tape": "^5.0.0",
 		"tap-min": "^1.1",
-		"is-stream": "^1.1",
+		"is-stream": "^2.0.0",
 		"stream-sink": "^2"
 	},
 	"scripts": {
